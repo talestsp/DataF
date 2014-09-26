@@ -1,5 +1,7 @@
-package com.futebol.tatcfc;
+package view;
 
+
+import com.futebol.tatcfc.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,6 +29,8 @@ public class TATCFC extends Activity {
 		//Log.d("Eu",(String) radioTimeButton.getText());
 		
 		Intent intent = new Intent(this, JogarCasa.class);
+		String stats = getData( (String) radioTimeButton.getText(), true);
+	    intent.putExtra("stats", stats);
 	    startActivity(intent);
 	    finish();
 	}
@@ -39,7 +43,15 @@ public class TATCFC extends Activity {
 		//Log.d("Eu2",(String) radioTimeButton.getText());
 		
 		Intent intent = new Intent(this, JogarVisitante.class);
-	    startActivity(intent);
+		String stats = getData( (String) radioTimeButton.getText(), false);
+	    intent.putExtra("stats", stats);
+		startActivity(intent);
 	    finish();
+	}
+
+	private String getData(String time, boolean emCasa) {
+		String data = "0.0, 45.6, 5.0, 7.4, 38.9, 19.1";
+		// TODO Pegar os dados do BD
+		return data;
 	}
 }

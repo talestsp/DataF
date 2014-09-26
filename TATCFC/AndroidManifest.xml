@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".TATCFC"
+            android:name="view.TATCFC"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -24,14 +24,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".JogarCasa"
+            android:name="view.JogarCasa"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".JogarVisitante"
+            android:name="view.JogarVisitante"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="view.RetrievingData"
+            android:label="@string/title_activity_retrieving_data" >
         </activity>
     </application>
 

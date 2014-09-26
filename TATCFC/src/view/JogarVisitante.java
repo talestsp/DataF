@@ -1,4 +1,6 @@
-package com.futebol.tatcfc;
+package view;
+
+import com.futebol.tatcfc.R;
 
 import android.app.Activity;
 import android.content.Intent;
