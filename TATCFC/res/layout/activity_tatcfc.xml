@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/campo"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:text="tatcFC"
+        android:textColor="#000000"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="100dp"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RadioGroup
+        		android:id="@+id/radioTimes"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content" >
+				<RadioButton
+			        android:id="@+id/atlMG"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Atlético MG"
+			        android:textColor="#000000"
+			        android:textSize="20sp"
+			        android:checked="true"/>
+				<RadioButton
+			        android:id="@+id/atlPR"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Atlético PR"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/bahia"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Bahia"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/botafogo"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Botafogo"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/corinthians"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Corinthians"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/coritiba"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Coritiba"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/criciuma"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Criciúma"
+			        android:textColor="#000000"
+			        android:textSize="20sp"
+			        android:onClick="teste" />
+				<RadioButton
+			        android:id="@+id/cruzeiro"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Cruzeiro"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/flamengo"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Flamengo"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/fluminense"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Fluminense"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/goias"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Goiás"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/gremio"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Grêmio"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/internacional"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Internacional"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/nautico"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Náutico"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/portuguesa"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Portuguesa"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+	
+				<RadioButton
+			        android:id="@+id/santos"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Santos"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/saopaulo"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="São Paulo"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/vasco"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Vasco"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+				<RadioButton
+			        android:id="@+id/vitoria"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Vitória"
+			        android:textColor="#000000"
+			        android:textSize="20sp" />
+			</RadioGroup>
+			<Button android:id="@+id/casa"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Casa"
+			        android:textColor="#000000"
+			        android:textSize="20sp"
+			        android:onClick="casa"/>
+			<Button android:id="@+id/visitante"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:text="Visitante"
+			        android:textColor="#000000"
+			        android:textSize="20sp"
+			        android:onClick="fora"/>
+    	</LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
