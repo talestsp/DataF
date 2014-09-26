@@ -1,6 +1,7 @@
 package com.futebol.tatcfc;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,7 +24,11 @@ public class TATCFC extends Activity {
 		
 		int selectedId = radioTime.getCheckedRadioButtonId();
 		radioTimeButton = (RadioButton) findViewById(selectedId);
-		Log.d("Eu",(String) radioTimeButton.getText());
+		//Log.d("Eu",(String) radioTimeButton.getText());
+		
+		Intent intent = new Intent(this, JogarCasa.class);
+	    startActivity(intent);
+	    finish();
 	}
 
 	public void fora(View v){
@@ -31,6 +36,10 @@ public class TATCFC extends Activity {
 		
 		int selectedId = radioTime.getCheckedRadioButtonId();
 		radioTimeButton = (RadioButton) findViewById(selectedId);
-		Log.d("Eu2",(String) radioTimeButton.getText());
+		//Log.d("Eu2",(String) radioTimeButton.getText());
+		
+		Intent intent = new Intent(this, JogarVisitante.class);
+	    startActivity(intent);
+	    finish();
 	}
 }
